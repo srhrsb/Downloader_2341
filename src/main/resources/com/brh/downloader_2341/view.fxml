@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="201.0" prefWidth="332.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.brh.downloader_2341.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="27.0" prefWidth="292.0">
+      <children>
+         <Label prefHeight="28.0" prefWidth="34.0" text="Target" />
+         <TextField fx:id="targetTf" prefHeight="26.0" prefWidth="208.0" />
+         <Button mnemonicParsing="false" onAction="#search" text="Folder" />
+      </children>
+   </HBox>
+   <HBox prefHeight="26.0" prefWidth="270.0">
+      <children>
+         <Label prefHeight="26.0" prefWidth="42.0" text="URL" />
+         <TextField fx:id="urlTf" prefHeight="26.0" prefWidth="231.0" />
+      </children>
+   </HBox>
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#download" text="Download" />
+</VBox>
